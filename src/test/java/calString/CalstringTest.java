@@ -24,6 +24,12 @@ class CalstringTest {
 		assertEquals(10, stringCalculator.add("1,2,3,4"));
 	}
 	
-	
+	@Test
+	void string_with_negative_number_should_return_number_as_int() throws Exception {
+		 CalString stringCalculator = new  CalString();
+		assertEquals(0, stringCalculator.add("1,-2,3,-4"));
+		assertEquals(0, stringCalculator.add("-1,2,3,-4"));
+
+	}
 }
 
